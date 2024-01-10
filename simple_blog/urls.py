@@ -21,6 +21,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     # BEGIN (write your solution here)
     path('about/', views.about , name='about'),
-    path('', include(('simple_blog.articles.urls', 'articles'))),
+    path('articles/', include(('simple_blog.articles.urls', 'articles'))),
     # END
 ]
